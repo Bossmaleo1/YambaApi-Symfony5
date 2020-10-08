@@ -3,10 +3,12 @@
 namespace App\Entity;
 
 use App\Repository\TownRepository;
+use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass=TownRepository::class)
+ * @ApiResource()
  */
 class Town
 {

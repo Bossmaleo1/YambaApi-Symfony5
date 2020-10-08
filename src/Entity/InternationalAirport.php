@@ -3,10 +3,12 @@
 namespace App\Entity;
 
 use App\Repository\InternationalAirportRepository;
+use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass=InternationalAirportRepository::class)
+ * @ApiResource()
  */
 class InternationalAirport
 {

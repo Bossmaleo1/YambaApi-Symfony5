@@ -3,10 +3,12 @@
 namespace App\Entity;
 
 use App\Repository\ParcelTrackerRepository;
+use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass=ParcelTrackerRepository::class)
+ * @ApiResource()
  */
 class ParcelTracker
 {

@@ -3,10 +3,12 @@
 namespace App\Entity;
 
 use App\Repository\NoticeRepository;
+use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass=NoticeRepository::class)
+ * @ApiResource()
  */
 class Notice
 {

@@ -3,10 +3,12 @@
 namespace App\Entity;
 
 use App\Repository\AnnouncementRepository;
+use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass=AnnouncementRepository::class)
+ * @ApiResource()
  */
 class Announcement
 {
