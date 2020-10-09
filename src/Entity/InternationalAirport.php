@@ -30,6 +30,11 @@ class InternationalAirport
     private $code;
 
     /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $lang;
+
+    /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Town")
      * @ORM\JoinColumn(nullable=false)
      */
@@ -72,6 +77,18 @@ class InternationalAirport
     public function setTown(?Town $town): self
     {
         $this->town = $town;
+
+        return $this;
+    }
+
+    public function getLang(): ?string
+    {
+        return $this->lang;
+    }
+
+    public function setLang(string $lang): self
+    {
+        $this->lang = $lang;
 
         return $this;
     }

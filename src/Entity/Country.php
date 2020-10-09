@@ -32,6 +32,11 @@ class Country
      */
     private $town;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $lang;
+
     public function __construct()
     {
         $this->town = new ArrayCollection();
@@ -81,6 +86,18 @@ class Country
                 $town->setCountry(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getLang(): ?string
+    {
+        return $this->lang;
+    }
+
+    public function setLang(string $lang): self
+    {
+        $this->lang = $lang;
 
         return $this;
     }

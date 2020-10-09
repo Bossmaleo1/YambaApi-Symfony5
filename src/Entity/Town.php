@@ -33,6 +33,11 @@ class Town
     private $country;
 
     /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $lang;
+
+    /**
      * @ORM\OneToMany(targetEntity="App\Entity\InternationalAirport", mappedBy="town")
      */
     private $internationalAirport;
@@ -98,6 +103,18 @@ class Town
                 $internationalAirport->setTown(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getLang(): ?string
+    {
+        return $this->lang;
+    }
+
+    public function setLang(string $lang): self
+    {
+        $this->lang = $lang;
 
         return $this;
     }
