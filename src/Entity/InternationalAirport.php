@@ -40,6 +40,7 @@ class InternationalAirport
      */
     private $town;
 
+
     public function getId(): ?int
     {
         return $this->id;

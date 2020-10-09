@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="844e754a-3734-4131-a5c5-cae010a391fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/InternationalAirport.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/InternationalAirport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +129,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/WazzabyApi" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -139,6 +144,8 @@
       <workItem from="1602108653944" duration="541000" />
       <workItem from="1602176280353" duration="928000" />
       <workItem from="1602180478837" duration="102000" />
+      <workItem from="1602255166290" duration="2922000" />
+      <workItem from="1602260732160" duration="505000" />
     </task>
     <servers />
   </component>
@@ -146,10 +153,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="694" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596978161035">
+    <state x="762" y="201" key="#com.intellij.ide.util.MemberChooser" timestamp="1602261203038">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="694" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1596978161035" />
+    <state x="762" y="201" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1044@0.0.1920.1044" timestamp="1602261203038" />
+    <state x="694" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602261065491">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="694" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1602261065491" />
     <state x="744" y="280" key="FileChooserDialogImpl" timestamp="1596978849169">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
