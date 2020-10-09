@@ -4,6 +4,8 @@ namespace App\Entity;
 
 use App\Repository\TownRepository;
 use ApiPlatform\Core\Annotation\ApiResource;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -30,6 +32,16 @@ class Town
      */
     private $country;
 
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\InternationalAirport", mappedBy="town")
+     */
+    private $internationalAirport;
+
+    public function __construct()
+    {
+        $this->internationalAirport = new ArrayCollection();
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -55,6 +67,37 @@ class Town
     public function setCountry(?Country $country): self
     {
         $this->country = $country;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|InternationalAirport[]
+     */
+    public function getInternationalAirport(): Collection
+    {
+        return $this->internationalAirport;
+    }
+
+    public function addInternationalAirport(InternationalAirport $internationalAirport): self
+    {
+        if (!$this->internationalAirport->contains($internationalAirport)) {
+            $this->internationalAirport[] = $internationalAirport;
+            $internationalAirport->setTown($this);
+        }
+
+        return $this;
+    }
+
+    public function removeInternationalAirport(InternationalAirport $internationalAirport): self
+    {
+        if ($this->internationalAirport->contains($internationalAirport)) {
+            $this->internationalAirport->removeElement($internationalAirport);
+            // set the owning side to null (unless already changed)
+            if ($internationalAirport->getTown() === $this) {
+                $internationalAirport->setTown(null);
+            }
+        }
 
         return $this;
     }
